@@ -1,4 +1,4 @@
-from PseudoRandomNumber.AbstractPseudoRandomNumber import AbstractPseudoRandomNuber
+from PseudoRandomNumber.AbstractPseudoRandomNumber import AbstractPseudoRandomNumber
 from PseudoRandomNumber.PseudoRandomNumberGeneratorInteger import PseudoRandomNumberGeneratorInteger
 
 
@@ -13,7 +13,8 @@ class PseudoRandomNumberGeneratorFactory:
         "integer": PseudoRandomNumberGeneratorInteger,
     }
 
-    def get_pseudo_random_number_generator_type(generator_type: str) -> AbstractPseudoRandomNuber:
+    @staticmethod
+    def get_pseudo_random_number_generator_type(generator_type: str) -> AbstractPseudoRandomNumber:
         if generator_type not in PseudoRandomNumberGeneratorFactory.PseudoRandomNumberGeneratorType:
             message = (f"There is no Generator Type class for {generator_type}."
                        f"There are Generator Type classes only for {PseudoRandomNumberGeneratorFactory.PseudoRandomNumberGeneratorType.keys()} ")

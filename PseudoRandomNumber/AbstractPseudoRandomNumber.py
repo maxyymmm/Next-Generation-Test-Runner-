@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class AbstractPseudoRandomNuber(ABC):
+class AbstractPseudoRandomNumber(ABC):
     """
     Abstract base class for pseudo-random number generators.
     """

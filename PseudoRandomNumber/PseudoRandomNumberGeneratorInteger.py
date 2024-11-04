@@ -1,7 +1,7 @@
 import time
-from PseudoRandomNumber.AbstractPseudoRandomNumber import AbstractPseudoRandomNuber
+from PseudoRandomNumber.AbstractPseudoRandomNumber import AbstractPseudoRandomNumber
 
-class PseudoRandomNumberGeneratorInteger(AbstractPseudoRandomNuber):
+class PseudoRandomNumberGeneratorInteger(AbstractPseudoRandomNumber):
     """
     A pseudo-random number generator that generates integers
     """
